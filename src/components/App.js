@@ -155,7 +155,12 @@ const states = [
 ];
 
 function App() {
-  return <div id="main"></div>;
+  const [changeStates,setStates] = useState(0)
+  return (
+              <div id="main">
+                  <StateComponent arrayStates={[...states]} />
+              </div>
+        );
 }
 
 export default App;
